@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        !function(b,r,i,d,g,e,w,l){if(b._bw)return;var a=b._bw=function(){a.callMethods?a.callMethods.apply(a,arguments):a.queue.push(arguments)};a.queue=[];var j=r.createElement(i);j.async=!0;j.src=d;var d=r.getElementsByTagName(i)[0];d.parentNode.insertBefore(j,d)}(window,document,'script','https://img.scupio.com/js/pixel.js');
+        _bw('init', '1');
+      </script>
+           
+</head>
+<body>
+    <button onclick="send_PageView()">send PageView event</button>
+    <script>
+    function send_PageView() {
+        _bw('track', 'PageView');
+    }
+    </script>
+    <button onclick="send_UserEngagement()">send UserEngagement event</button>
+    <script>
+    function send_UserEngagement() {
+        _bw('track', 'UserEngagement');
+    }
+    </script>
+</body>
+</html>
