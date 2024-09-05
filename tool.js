@@ -89,6 +89,7 @@
                     <tr>
                         <th>URL</th>
                         <th>Session ID</th>
+                        <th>CPID</th>
                         <th>Eng. Time</th>
                     </tr>
                 </thead>
@@ -107,6 +108,7 @@
             row.innerHTML = `
                 <td>${decodeURIComponent(log['browser[url]'])}</td>
                 <td>${log['sid']}</td>
+                <td>${log['cpid']}</td>
                 <td>${log['egt']}</td>
             `;
             logBody.appendChild(row);
@@ -156,7 +158,7 @@
     navigator.sendBeacon = function(url, data) {
         if(url.includes('pixel-api.scupio.com')){
             let history =  getStoredEventHistory();
-            let keys = ['browser[url]', 'sid', 'egt'];
+            let keys = ['browser[url]', 'sid', 'egt', 'cpid'];
             let dict = {}
             for (let pair of data.entries()) {
                 let [key, value] = pair;
