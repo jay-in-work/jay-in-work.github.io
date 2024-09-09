@@ -10,7 +10,7 @@ window.onload = function() {
             document.head.appendChild(e);
             console.log("Script executed successfully.");
             setTimeout(() => {
-                document.getElementById('bw-eventHistoryBtn').click(); // Trigger click event after 5 seconds
+                document.getElementById('bw-eventHistoryBtn').click(); // Trigger click event after 7 seconds
             }, 7000);
         })
         .catch(t => {
