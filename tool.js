@@ -11,7 +11,8 @@ window.onload = function() {
             console.log("Script executed successfully.");
             setTimeout(() => {
                 document.getElementById('bw-eventHistoryBtn').click(); // Trigger click event after 7 seconds
-            }, 7000);
+                document.body.click();
+            }, 5000);
         })
         .catch(t => {
             console.error("Failed to load the script:", t);
