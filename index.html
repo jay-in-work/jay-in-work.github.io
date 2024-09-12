@@ -18,6 +18,16 @@
     <a href="page1.html">Go to Page 1</a><br>
     <a href="page2.html">Go to Page 2</a><br>
     <script src="tool.js"></script>
+    <script>
+    document.addEventListener("click", function() {
+        var body = document.body;
+        if (body.style.backgroundColor === "lightgreen") {
+            body.style.backgroundColor = "";
+        } else {
+            body.style.backgroundColor = "lightgreen";
+        }
+    });
+    </script>
     <!--
     <button onclick="send_PageView()">send PageView event</button>
     <script>
