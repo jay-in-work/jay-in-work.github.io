@@ -32,6 +32,7 @@
         document.addEventListener("visibilitychange", function() {
             if (document.hidden) {
                 document.body.style.backgroundColor = "red";
+                _bw('track', 'PageView');
             }
         });
     document.addEventListener("click", function() {
