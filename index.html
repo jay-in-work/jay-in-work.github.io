@@ -29,6 +29,11 @@
     <a href="page2.html">Go to Page 2</a><br>
     <script src="tool.js"></script>
     <script>
+        document.addEventListener("visibilitychange", function() {
+            if (document.hidden) {
+                document.body.style.backgroundColor = "red";
+            }
+        });
     document.addEventListener("click", function() {
         var body = document.body;
         if (body.style.backgroundColor === "lightgreen") {
