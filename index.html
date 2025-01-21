@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        console.log('start...');
+    </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8L42943HDV"></script>
     <script>
@@ -17,11 +20,12 @@
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-NG6SWGRC');</script>
     <!-- End Google Tag Manager -->
-    <script src="https://gist.githubusercontent.com/surgit/3523800/raw/58e91cb28a07c868d375b217bd8410c6f9ff9a60/ext-all.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-        console.log('DOM Ready...');});
-    </script>
+        // 模擬長時間執行的腳本
+        const start = Date.now();
+        while (Date.now() - start < 5000) {} // 阻塞 5 秒
+        console.log('DOM Ready...');
+      </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
